@@ -1,0 +1,46 @@
+body {text-align: center;
+      background-color: #FFC0CB;}
+
+h1 {font-family: Garamond, sans-serif;
+    color: #9D0044;
+    font-size: 40px;}
+
+h2{font-family: Garamond, sans-serif;
+   color: #9D0044;
+   font-size: 32px;}
+
+h3{font-family: Garamond, sans-serif;
+   color: black;
+   font-size: 30px;}
+
+option {font-family: Garamond, sans-serif;
+        color: #FFC0CB;
+        background-color: #9D0044;
+        font-size: 20px;
+        cursor: pointer;}
+
+button {font-family: Garamond, sans-serif;
+        color: #FFC0CB;
+        background-color: #9D0044;
+        font-size: 27px;
+        margin-left: 5px;}
+
+button:hover {background-color: #FFC0CB;
+              cursor: pointer;
+              color: #9D0044;}
+
+select {font-size: 27px;
+        font-family: Garamond, sans-serif;
+        background-color: #9D0044;
+        color: white;
+        margin-right: 5px;}
+
+select:hover {background-color: #FFC0CB;
+              cursor: pointer;
+              color: #9D0044;}
+
+label {font-size: 27px;
+       margin-right: 5px;}
+
+input {font-size: 24px;}
+

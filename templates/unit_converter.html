@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="static/style_unit.css">
+</head>
+<body>
+
+<header>
+  <h1>Unit Converter</h1>
+  <h2>A Simple Converter for Distance, Weight, Volume and Other Measurements</h2>
+</header>
+<hr>
+<img src="static/sakura.jpg" alt="Sakura" width="500" height="300">
+<h3>Enter your conversion and values below:</h3>
+
+<form method="post">
+  <label for="unit">Choose a conversion:  </label>
+  <select name="unit" id="unit" onchange="this.form.submit">
+    <option value="">Select</option>
+    <option value="kg_lb">Kilograms to Pounds</option>
+    <option value="lb_kg">Pounds to Kilograms</option>
+    <option value="ounce_g">Ounces to Grams</option>
+    <option value="g_ounce">Grams to Ounces</option>
+    <option value="gal_l">Gallons to Litres</option>
+    <option value="l_gal">Litres to Gallons</option>
+    <option value="cup_ml">Cups to Millilitres</option>
+    <option value="ml_cup">Millilitres to Cups</option>
+    <option value="in_cm">Inches to Centimetres</option>
+    <option value="cm_in">Centimetres to Inches</option>
+    <option value="metre_foot">Metres to Feet</option>
+    <option value="foot_metre">Feet to Metres</option>
+    <option value="mile_km">Miles to Kilometres</option>
+    <option value="km_mile">Kilometres to Miles</option>
+  </select>
+  <input type="number" name="num" step="any" required>
+  <button type="submit">Convert</button>
+
+</form>
+
+  {% if result is not none %}
+    <h3>Result: {{ result }}</h3>
+  {% endif %}
+</body>
+</html>
